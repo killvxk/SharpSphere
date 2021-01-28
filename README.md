@@ -1,6 +1,6 @@
 # SharpSphere - Attacking vSphere Infrastructure
 
-Credit [@jkcoote](https://twitter.com/jkcoote) & Grzegorz Rychlik
+Credit [@jkcoote](https://twitter.com/jkcoote) & [@grzryc](https://github.com/grzryc)
 
 Full walk-through and examples available [here](https://jamescoote.co.uk/introducing-sharpsphere/).
 
@@ -11,7 +11,7 @@ SharpSphere gives red teamers the ability to easily interact with the guest oper
 - **Code Execution** - Allows arbitrary commands to be executed in the guest OS and returns the result
 - **File Upload** - Allows arbitrary files to be uploaded to the guest OS
 - **File Download** - Allows arbitrary files to be downloaded from the guest OS
-- **List VMs** - Tests supplied credentials inside the guest OS
+- **List VMs** - Lists the VMs managed by vCenter that have VMware Tools running
 
 SharpSphere supports execution through Cobalt Strike's *execute-assembly*.
 
@@ -23,7 +23,7 @@ If you compile yourself you'll need to use `ILMerge` to combine SharpSphere.exe 
 ## Useage
 Available modules:
 ```
-SharpHound.exe help
+SharpSphere.exe help
 
 
   list        List all VMs managed by this vCenter
